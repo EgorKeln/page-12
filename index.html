@@ -1,0 +1,105 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+    <head>
+        <!-- Заголовок страницы в браузере -->
+        <title>CSS. Часть №8 (Позиционирование)</title>
+        <!-- Подключаем CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- Кодировка страницы -->
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    </head>
+    <!-- Отображаемое тело страницы -->
+    <body>
+        <div class="block">
+            <div class="block_1">
+                <h2>block_1</h2>
+                <p></p>
+            </div>
+            <div class="block_relative">
+                <h2>block_2 - relative</h2>
+                <p>Положение элемента устанавливается относительно изначального положения в коде. С помощью параметров left, top, right и bottom можно задавать положение блока.</p>
+                <p class="p_features">Применены свойства: <br>position: relative; <br>left: 400px;<br> top: 20px;<br> z-index: 0;</p>
+            </div>
+            <div class="block_3">
+                <h2>block_3</h2>
+                <p class="p_features">Применены свойства: <br>position: relative; <br>z-index: 2; <br>opacity: 0.9;</p>
+            </div>
+            <div class="block_absolute">
+                <h2>block_4 - absolute</h2>
+                <p>Блок вырывается из потока элементов на странице, теряет позицию и размеры, начинает вести себя как строчный элемент занимая ширину относительно находящегося в нем контента (если не указать ширину блоку) и позиционируется относительно окна браузера. <br>Обязательно сопровождается параметрами left, top, right или bottom. <br>Если у родительского блока будет значение position: relative, block_4 - absolute будет позиционироваться относительно своего родителя</p>
+                <p class="p_features">Применены свойства: <br>position: absolute; <br>left: 10px; <br>top: 10px; <br>width: 400px; <br>opacity: 0.9;</p>
+            </div>
+            <div class="block_5">
+                <h2>block_5</h2>
+                <p></p>
+            </div>
+            <div class="block_fixed">
+                <h2>block_6 - fixed</h2>
+                <p>Блок к которому применено свойство position: fixed; фиксируется на своем месте. <br>Ведёт себя так-же как и absolute, но позиционируется только относительно окна браузера</p>
+                <p class="p_features">Применены свойства: <br>position: fixed; <br>right: 10px; <br>bottom: 10px; <br>width: 400px;<br>opacity: 0.9;</p>
+            </div>
+            <div class="block_sticky">
+                <h2>block_7 - sticky (липкий)</h2>
+                <p>Применяя параметр position: sticky; к блоку, мы наделяем наш блок гибридом свойств, между свойством(по умолчанию) position: static; и position: fixed; </p>
+                <p>Теперь как это работает: в момент скрола страницы, как только позиция блока становиться в значение top: 0; блок прилипает к верхней части экрана и находиться там пока его не догонит следующий липкий блок, а далее передаётся эстафета :).</p>
+                <p class="p_features">Применены свойства: <br>position: sticky; <br>top: 0;</p>
+                
+            </div>
+            <div class="block_8">
+                <h2>block_8</h2>
+                <h3>Ко всем заголовкам -h2- </h3>
+                <p class="p_features">Применены свойства: <br>font-size: 24px; <br>font-weight: 700; <br>text-align: center; <br>padding: 10px 0px 0px 0px;</p>
+                <h3>Ко всем заголовкам -h3- </h3>
+                <p class="p_features">Применены свойства: <br>font-size: 20px; <br>font-weight: 700; <br>padding: 10px 0px 0px 5px;</p>
+                <h3>Ко всем параграфам -p- </h3>
+                <p class="p_features">Применены свойства: <br>padding: 0px 0px 0px 5px;</p>
+                <h3>К табличкам со свойствами :)</h3>
+                <p class="p_features">Применены свойства: <br>display: block; <br>margin: 5px 0px 0px 5px; <br>border: 1px solid #000; <br>width: 200px;</p>
+            </div>
+            <div class="block_sticky2">
+                <h2>block_9 - sticky2 (липкий)</h2>
+                <p>Применяя параметр position: sticky; к блоку, мы наделяем наш блок гибридом свойств, между свойством(по умолчанию) position: static; и position: fixed; </p>
+                <p>Теперь как это работает: в момент скрола страницы, как только позиция блока становиться в значение top: 0; блок прилипает к верхней части экрана и находиться там пока его не догонит следующий липкий блок, а далее передаётся эстафета :).</p>
+                <p class="p_features">Применены свойства: <br>position: sticky; <br>top: 0;</p>
+                
+            </div>
+            <div class="block_10">
+                <h2>block_10</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis voluptatem quasi facilis blanditiis aperiam distinctio. Laborum provident voluptatum rem expedita saepe aut quisquam error quibusdam, vitae debitis ducimus placeat?
+                Eius corrupti minus ipsum adipisci commodi, earum laboriosam quos saepe nulla iure quisquam deleniti ipsa molestias odit soluta explicabo at facere eum quod animi culpa numquam! Dolorum asperiores excepturi omnis!
+                Ea libero qui, quae omnis expedita eos accusantium quaerat accusamus excepturi sit adipisci ratione cupiditate dolores itaque illo, pariatur, quasi explicabo tenetur atque? A suscipit aliquid qui dolorum! Officia, libero?
+                Voluptas, maxime vel veniam suscipit doloremque molestiae autem velit sunt? Rem porro quam, minus quibusdam illum at voluptatibus sed corrupti accusamus beatae neque ab praesentium pariatur similique cumque assumenda cupiditate.
+                Illum voluptatum exercitationem saepe perferendis beatae recusandae similique debitis alias veniam quod facilis, quos nihil nesciunt numquam quae obcaecati eveniet distinctio earum molestiae unde. Rem voluptatibus quo illo. Autem, excepturi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis voluptatem quasi facilis blanditiis aperiam distinctio. Laborum provident voluptatum rem expedita saepe aut quisquam error quibusdam, vitae debitis ducimus placeat?
+                Eius corrupti minus ipsum adipisci commodi, earum laboriosam quos saepe nulla iure quisquam deleniti ipsa molestias odit soluta explicabo at facere eum quod animi culpa numquam! Dolorum asperiores excepturi omnis!
+                Ea libero qui, quae omnis expedita eos accusantium quaerat accusamus excepturi sit adipisci ratione cupiditate dolores itaque illo, pariatur, quasi explicabo tenetur atque? A suscipit aliquid qui dolorum! Officia, libero?
+                Voluptas, maxime vel veniam suscipit doloremque molestiae autem velit sunt? Rem porro quam, minus quibusdam illum at voluptatibus sed corrupti accusamus beatae neque ab praesentium pariatur similique cumque assumenda cupiditate.
+                Illum voluptatum exercitationem saepe perferendis beatae recusandae similique debitis alias veniam quod facilis, quos nihil nesciunt numquam quae obcaecati eveniet distinctio earum molestiae unde. Rem voluptatibus quo illo. Autem, excepturi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis voluptatem quasi facilis blanditiis aperiam distinctio. Laborum provident voluptatum rem expedita saepe aut quisquam error quibusdam, vitae debitis ducimus placeat?
+                Eius corrupti minus ipsum adipisci commodi, earum laboriosam quos saepe nulla iure quisquam deleniti ipsa molestias odit soluta explicabo at facere eum quod animi culpa numquam! Dolorum asperiores excepturi omnis!
+                Ea libero qui, quae omnis expedita eos accusantium quaerat accusamus excepturi sit adipisci ratione cupiditate dolores itaque illo, pariatur, quasi explicabo tenetur atque? A suscipit aliquid qui dolorum! Officia, libero?
+                Voluptas, maxime vel veniam suscipit doloremque molestiae autem velit sunt? Rem porro quam, minus quibusdam illum at voluptatibus sed corrupti accusamus beatae neque ab praesentium pariatur similique cumque assumenda cupiditate.
+                Illum voluptatum exercitationem saepe perferendis beatae recusandae similique debitis alias veniam quod facilis, quos nihil nesciunt numquam quae obcaecati eveniet distinctio earum molestiae unde. Rem voluptatibus quo illo. Autem, excepturi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis voluptatem quasi facilis blanditiis aperiam distinctio. Laborum provident voluptatum rem expedita saepe aut quisquam error quibusdam, vitae debitis ducimus placeat?
+                Eius corrupti minus ipsum adipisci commodi, earum laboriosam quos saepe nulla iure quisquam deleniti ipsa molestias odit soluta explicabo at facere eum quod animi culpa numquam! Dolorum asperiores excepturi omnis!
+                Ea libero qui, quae omnis expedita eos accusantium quaerat accusamus excepturi sit adipisci ratione cupiditate dolores itaque illo, pariatur, quasi explicabo tenetur atque? A suscipit aliquid qui dolorum! Officia, libero?
+                Voluptas, maxime vel veniam suscipit doloremque molestiae autem velit sunt? Rem porro quam, minus quibusdam illum at voluptatibus sed corrupti accusamus beatae neque ab praesentium pariatur similique cumque assumenda cupiditate.
+                Illum voluptatum exercitationem saepe perferendis beatae recusandae similique debitis alias veniam quod facilis, quos nihil nesciunt numquam quae obcaecati eveniet distinctio earum molestiae unde. Rem voluptatibus quo illo. Autem, excepturi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis voluptatem quasi facilis blanditiis aperiam distinctio. Laborum provident voluptatum rem expedita saepe aut quisquam error quibusdam, vitae debitis ducimus placeat?
+                Eius corrupti minus ipsum adipisci commodi, earum laboriosam quos saepe nulla iure quisquam deleniti ipsa molestias odit soluta explicabo at facere eum quod animi culpa numquam! Dolorum asperiores excepturi omnis!
+                Ea libero qui, quae omnis expedita eos accusantium quaerat accusamus excepturi sit adipisci ratione cupiditate dolores itaque illo, pariatur, quasi explicabo tenetur atque? A suscipit aliquid qui dolorum! Officia, libero?
+                Voluptas, maxime vel veniam suscipit doloremque molestiae autem velit sunt? Rem porro quam, minus quibusdam illum at voluptatibus sed corrupti accusamus beatae neque ab praesentium pariatur similique cumque assumenda cupiditate.
+                Illum voluptatum exercitationem saepe perferendis beatae recusandae similique debitis alias veniam quod facilis, quos nihil nesciunt numquam quae obcaecati eveniet distinctio earum molestiae unde. Rem voluptatibus quo illo. Autem, excepturi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis voluptatem quasi facilis blanditiis aperiam distinctio. Laborum provident voluptatum rem expedita saepe aut quisquam error quibusdam, vitae debitis ducimus placeat?
+                Eius corrupti minus ipsum adipisci commodi, earum laboriosam quos saepe nulla iure quisquam deleniti ipsa molestias odit soluta explicabo at facere eum quod animi culpa numquam! Dolorum asperiores excepturi omnis!
+                Ea libero qui, quae omnis expedita eos accusantium quaerat accusamus excepturi sit adipisci ratione cupiditate dolores itaque illo, pariatur, quasi explicabo tenetur atque? A suscipit aliquid qui dolorum! Officia, libero?
+                Voluptas, maxime vel veniam suscipit doloremque molestiae autem velit sunt? Rem porro quam, minus quibusdam illum at voluptatibus sed corrupti accusamus beatae neque ab praesentium pariatur similique cumque assumenda cupiditate.
+                Illum voluptatum exercitationem saepe perferendis beatae recusandae similique debitis alias veniam quod facilis, quos nihil nesciunt numquam quae obcaecati eveniet distinctio earum molestiae unde. Rem voluptatibus quo illo. Autem, excepturi!</p>
+            </div>
+        </div>
+        
+    </body>
+</html>
